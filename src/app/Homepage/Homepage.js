@@ -51,7 +51,7 @@ class Homepage extends React.Component {
                         <h1>PRIVACY</h1>
                         <div id="homepage-privay-card-holder">
                             <Card icon={faLock} title="PRIVATE">All of your notes are only accessible by your account. We do not share <b>any</b> collected data.</Card>
-                            <Card icon={faFingerprint} title="ENCRYPTED">All notes & passwords on our servers are encrypted with the SHA-256 encryption algorithm. Encryption makes your data private, even in the case of a server breach.</Card>
+                            <Card icon={faFingerprint} title="ENCRYPTED">All passwords on our servers are encrypted with the SHA-256 encryption algorithm. Encryption makes your passwords private, even in the case of a server breach..</Card>
                         </div>
                     </div>
                 </div>
