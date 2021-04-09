@@ -1,0 +1,237 @@
+@import '../globals.css';
+
+#homepage {
+    width: 100%;
+}
+
+/* HEAD */
+
+#homepage-head {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#homepage-head img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    width: 50%;
+}
+
+#homepage-head h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4.5vw;
+
+    text-shadow: .1vw .1vw .2vw rgba(0, 0, 0, 0.25);
+}
+
+@keyframes arrow-anim {
+    0% {bottom: 0%;}
+    50% {bottom: 5%;}
+    100% {bottom: 0%;}
+}
+
+#arrow-down {
+    position: absolute;
+
+    bottom: 0%;
+
+    animation-name: arrow-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* BODY */
+
+#homepage-body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* DESIGN */
+
+#homepage-design {
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+
+    margin-top: 10%;
+}
+
+#homepage-design div {
+    display: flex;
+    flex-direction: column;
+
+    width: 45%;
+}
+
+#homepage-design h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 5vw;
+
+    margin: 0;
+
+    text-shadow: .1vw .1vw .2vw rgba(0, 0, 0, 0.25);
+}
+
+#homepage-design p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+
+    text-shadow: .1vw .1vw .2vw rgba(0, 0, 0, 0.25);
+}
+
+#homepage-design img {
+    width: 40%;
+
+    margin-left: auto;
+
+    background-color: black;
+}
+
+/* PRIVACY */
+
+#homepage-privacy {
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage-privacy h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 8vw;
+
+    text-align: center;
+
+    margin: 0;
+    margin-bottom: 2vw;
+
+    text-shadow: .1vw .1vw .2vw rgba(0, 0, 0, 0.25);
+}
+
+#homepage-privay-card-holder {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.homepage-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+
+    align-items: flex-start;
+
+    font-size: 1vw;
+
+    padding-bottom: 8vw;
+}
+
+.homepage-card::before {
+    content: '';
+    position: absolute;
+
+    margin-top: 2%;
+
+    width: 32%;
+    height: 21vw;
+
+    z-index: 0;
+
+    border-radius: .5vw;
+}
+
+.light .homepage-card::before {
+    background-color: #EBEAEA;
+}
+
+.dark .homepage-card::before {
+    background-color: #4B4B4B;
+}
+
+.purple .homepage-card::before {
+    background-color: #23233E;
+}
+
+.homepage-card svg {
+    align-self: center;
+
+    padding: .4vw;
+    padding-left: .6vw;
+    padding-right: .6vw;
+
+    border-radius: .5vw;
+
+    z-index: 1;
+}
+
+.light .homepage-card svg {
+    background-color: white;
+}
+
+.dark .homepage-card svg {
+    background-color: #202020   ;
+}
+
+.purple .homepage-card svg {
+    background-color: #1B1B2F;
+}
+
+.homepage-card h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+
+    margin: 0;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 2%;
+
+    text-shadow: .1vw .1vw .2vw rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
+
+    width: 98%;
+}
+
+.homepage-card p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+
+    margin: 0;
+    margin-left: 2%;
+
+    text-shadow: .1vw .1vw .2vw rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
+
+    width: 98%;
+}
+
+.light p {
+    color: #494949;
+}
+
+.dark p {
+    color: #CFCFCF;
+}
+
+.purple p {
+    color: white;
+}
