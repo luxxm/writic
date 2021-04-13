@@ -1,7 +1,7 @@
 import React from 'react';
 import ThemeContext from '../theme-context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faLock, faFingerprint } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faLock, faFingerprint, faWallet } from '@fortawesome/free-solid-svg-icons';
 
 import './Homepage.css';
 
@@ -51,8 +51,16 @@ class Homepage extends React.Component {
                         <h1>PRIVACY</h1>
                         <div id="homepage-privay-card-holder">
                             <Card icon={faLock} title="PRIVATE">All of your notes are only accessible by your account. We do not share <b>any</b> collected data.</Card>
-                            <Card icon={faFingerprint} title="ENCRYPTED">All passwords on our servers are encrypted with the SHA-256 encryption algorithm. Encryption makes your passwords private, even in the case of a server breach..</Card>
+                            <Card icon={faFingerprint} title="ENCRYPTED">All passwords on our servers are encrypted with the SHA-256 encryption algorithm. Encryption makes your passwords private, even in the case of a server breach.</Card>
                         </div>
+                    </div>
+
+                    <div id="homepage-free">
+                        <div>
+                            <h2>FREE</h2>
+                            <p>Writic will always be free, but you can always help out by leaving a donation to our bitcoin, monero, or ethereum wallet.</p>
+                        </div>
+                        <FontAwesomeIcon icon={faWallet} size="10x" />
                     </div>
                 </div>
             </div>
