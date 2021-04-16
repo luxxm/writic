@@ -9,3 +9,15 @@
 
     font-size: 1vw;
 }
+
+.themeChanger {
+    margin-left: 1vw;
+
+    cursor: pointer;
+
+    transition: ease-in-out 100ms all;
+}
+
+.themeChanger:hover {
+    color: #f66151;
+}

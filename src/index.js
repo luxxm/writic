@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ThemeContext from './app/theme-context';
 import Homepage from './app/Homepage/Homepage';
-import Topbar from './app/Topbars/HomepageTopbar/Topbar'; // Homepage version of the topbar
+import HomepageTopbar from './app/Topbars/HomepageTopbar/HomepageTopbar'; // Homepage version of the topbar
 
 class Index extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class Index extends React.Component {
   render() {
     return(
       <ThemeContext.Provider value={this.state.theme}>
-      <Topbar themeFunc={this.changeTheme} />
+      <HomepageTopbar themeFunc={this.changeTheme} />
       <Homepage />
       </ThemeContext.Provider>
     );

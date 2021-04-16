@@ -1,0 +1,41 @@
+@import '../../globals.css';
+
+#homepage-topbar {
+    height: 5vw;
+
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+#homepage-topbar div {
+    margin-left: auto;
+    margin-right: 1vw;
+}
+
+.loginButtons {
+    all: unset;
+
+    margin-left: .5vw;
+    margin-right: .5vw;
+
+    font-size: 1.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    border: solid;
+
+    text-align: center;
+
+    padding-top: .1vw;
+    padding-bottom: .2vw;
+    padding-left: .1vw;
+    padding-right: .2vw;
+
+    cursor: pointer;
+}
