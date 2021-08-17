@@ -9,6 +9,8 @@
     color: black;
 
     --hover-color: #F66151;
+    --input-box-background: #EBEAEA;
+    --input-box-foreground: #494949d0;
 }
 
 .dark {
@@ -16,6 +18,8 @@
     color: white;
 
     --hover-color: #F66151;
+    --input-box-background: #4B4B4B;
+    --input-box-foreground: #cfcfcfd0;
 }
 
 .purple {
@@ -23,4 +27,6 @@
     color: #F66151;
 
     --hover-color: white;
+    --input-box-background: #162447;
+    --input-box-foreground: #F66151d0;
 }
