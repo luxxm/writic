@@ -19,5 +19,5 @@
 }
 
 .themeChanger:hover {
-    color: #f66151;
+    color: var(--hover-color);
 }

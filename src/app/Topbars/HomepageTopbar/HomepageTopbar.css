@@ -38,4 +38,10 @@
     padding-right: .2vw;
 
     cursor: pointer;
+
+    transition: ease-in-out 100ms all;
+}
+
+.loginButtons:hover {
+    background-color: var(--hover-color);
 }
