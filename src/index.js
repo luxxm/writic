@@ -7,6 +7,7 @@ import Homepage from './app/Homepage/Homepage';
 import HomepageTopbar from './app/Topbars/HomepageTopbar/HomepageTopbar'; // Homepage version of the topbar
 
 import Login from './app/Login/Login';
+import Register from './app/Register/Register';
 
 class Index extends React.Component {
   constructor(props) {
@@ -33,8 +34,8 @@ class Index extends React.Component {
   render() {
     return(
       <ThemeContext.Provider value={this.state.theme}>
-      <HomepageTopbar themeFunc={this.changeTheme} />
-      <Login />
+        <HomepageTopbar themeFunc={this.changeTheme} />
+        <Register />
       </ThemeContext.Provider>
     );
   }
