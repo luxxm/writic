@@ -35,7 +35,7 @@ class Index extends React.Component {
     return(
       <ThemeContext.Provider value={this.state.theme}>
         <HomepageTopbar themeFunc={this.changeTheme} />
-        <Register />
+        <Login />
       </ThemeContext.Provider>
     );
   }
