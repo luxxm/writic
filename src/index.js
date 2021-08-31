@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import ThemeContext from './app/theme-context';
 
@@ -35,7 +36,22 @@ class Index extends React.Component {
     return(
       <ThemeContext.Provider value={this.state.theme}>
         <HomepageTopbar themeFunc={this.changeTheme} />
-        <Login />
+
+        <BrowserRouter>
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+
+            <Route path="/register">
+              <Register />
+            </Route>
+
+            <Route path="/">
+              <Homepage />
+            </Route>
+          </Switch>
+        </BrowserRouter>
       </ThemeContext.Provider>
     );
   }
