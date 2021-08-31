@@ -19,7 +19,7 @@ class Register extends React.Component {
         super(props);
     }
     static contextType = ThemeContext;
-
+    
 
     render() {
         return(
