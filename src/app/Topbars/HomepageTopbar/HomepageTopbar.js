@@ -12,8 +12,8 @@ function HomepageTopbar(props) {
         <div className={`topbar ${context}`} id="homepage-topbar">
             <FontAwesomeIcon className="themeChanger" icon={faPalette} size="3x" onClick={ () => props.themeFunc() } />
             <div>
-                <button className="loginButtons">LOGIN</button>
-                <button className="loginButtons">REGISTER</button>
+                <button onClick={() => window.location = "http://localhost:3000/login"} className="loginButtons">LOGIN</button>
+                <button onClick={() => window.location = "http://localhost:3000/register"} className="loginButtons">REGISTER</button>
             </div>
         </div>
     );
