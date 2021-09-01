@@ -35,9 +35,9 @@ class Index extends React.Component {
   render() {
     return(
       <ThemeContext.Provider value={this.state.theme}>
-        <HomepageTopbar themeFunc={this.changeTheme} />
-
         <BrowserRouter>
+          <HomepageTopbar themeFunc={this.changeTheme} />
+
           <Switch>
             <Route path="/login">
               <Login />
