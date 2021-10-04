@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'; //Multi-page support
 import './index.css';
 import ThemeContext from './app/theme-context';
 
-import Homepage from './app/Homepage/Homepage';
+import Homepage from './app/Homepage/Homepage'; //Starter page (not accessible after login/registration)
 import HomepageTopbar from './app/Topbars/HomepageTopbar/HomepageTopbar'; // Homepage version of the topbar
+import EditorTopbar from './app/Topbars/EditorTopbar/EditorTopbar'; //Editor version of the topbar (only the theme changer)
 
 import Login from './app/Login/Login';
 import Register from './app/Register/Register';
@@ -20,6 +21,7 @@ class Index extends React.Component {
     this.changeTheme = this.changeTheme.bind(this);
   }
 
+  //Function responsible for changing themes (should be passed as a prop to topbars and other elements that change themes)
   changeTheme() {
     switch(this.state.theme) {
       case "light":
@@ -50,6 +52,7 @@ class Index extends React.Component {
             </Route>
 
             <Route path="/">
+              <EditorTopbar themeFunc={this.changeTheme} />
               <Editor />
             </Route>
           </Switch>

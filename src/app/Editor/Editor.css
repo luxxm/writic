@@ -1,6 +1,12 @@
 @import '../globals.css';
 
-h1 {
+
+#editor {
+    width: 100vw;
+    height: 100vh;
+}
+
+#editor h1 {
     font-family: "Noto Sans JP";
     font-size: 2vw;
     font-weight: 700;
@@ -21,10 +27,14 @@ h1 {
     font-size: .4vw;
 
     background-color: var(--input-box-background);
+
+    z-index: 1;
 }
 
 #editor-sidebar svg {
     color: var(--input-box-foreground);
+
+    width: 1vw;
 }
 
 .editor-sidebar-item {
