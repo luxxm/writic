@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@300;700;900&display=swap');
 
 * {
     transition: ease-in-out background-color 200ms, color 100ms;
@@ -7,6 +7,8 @@
 .light {
     background-color: white;
     color: black;
+
+    --background-color: white;
 
     --hover-color: #F66151;
     --input-box-background: #EBEAEA;
@@ -17,6 +19,8 @@
     background-color: #202020;
     color: white;
 
+    --background-color: #202020;
+
     --hover-color: #F66151;
     --input-box-background: #4B4B4B;
     --input-box-foreground: #cfcfcfd0;
@@ -25,6 +29,8 @@
 .purple {
     background-color: #1B1B2F;
     color: #F66151;
+
+    --background-color: #1B1B2F;
 
     --hover-color: white;
     --input-box-background: #162447;

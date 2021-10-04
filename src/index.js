@@ -10,6 +10,8 @@ import HomepageTopbar from './app/Topbars/HomepageTopbar/HomepageTopbar'; // Hom
 import Login from './app/Login/Login';
 import Register from './app/Register/Register';
 
+import Editor from './app/Editor/Editor';
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -36,19 +38,19 @@ class Index extends React.Component {
     return(
       <ThemeContext.Provider value={this.state.theme}>
         <BrowserRouter>
-          <HomepageTopbar themeFunc={this.changeTheme} />
-
           <Switch>
             <Route path="/login">
+              <HomepageTopbar themeFunc={this.changeTheme} />
               <Login />
             </Route>
 
             <Route path="/register">
+              <HomepageTopbar themeFunc={this.changeTheme} />
               <Register />
             </Route>
 
             <Route path="/">
-              <Homepage />
+              <Editor />
             </Route>
           </Switch>
         </BrowserRouter>
