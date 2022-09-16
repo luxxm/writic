@@ -81,8 +81,8 @@ class Sidebar extends React.Component {
 
                 <h1>PAPER</h1>
 
-                <ListItem icon={faFill} />
-                <ListItem icon={faAdjust} />
+                <ListItem icon={faFill}  defaultValue={this.props.values.paperColor} assignedFunc={"paperColor"} changeValue={this.changeValue}/>
+                <ListItem icon={faAdjust}/>
             </div>
         );
     }
@@ -90,7 +90,7 @@ class Sidebar extends React.Component {
 
 function Paper(props) {
     return(
-        <div id="editor-paper">
+        <div id="editor-paper" style={{backgroundColor: props.values.paperColor}}>
             <p style={{fontFamily: props.values.font, fontSize: props.values.fontSize, letterSpacing: props.values.fontSpacing, color: props.values.color, backgroundColor: props.values.bgColor}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Sapien nec sagittis aliquam malesuada. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. A scelerisque purus semper eget duis. In nibh mauris cursus mattis molestie a iaculis. Elementum nisi quis eleifend quam. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Vitae purus faucibus ornare suspendisse sed. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Elit eget gravida cum sociis natoque penatibus et magnis dis. Tortor dignissim convallis aenean et. Adipiscing bibendum est ultricies integer quis auctor. Eu feugiat pretium nibh ipsum consequat nisl vel pretium.
 
@@ -113,6 +113,7 @@ class Editor extends React.Component {
                 fontSpacing: 10, //Percentage
                 color: "#FFFFFF", //Hex (string)
                 bgColor: "#FFFFFF00", //Hex with alpha (string)
+                paperColor: "#AAAAAA", //Hex (string)
 
             }
         }
